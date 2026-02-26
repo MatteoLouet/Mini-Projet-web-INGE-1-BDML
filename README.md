@@ -1,16 +1,69 @@
-# React + Vite
+#  Calculateur de Protéines - Mini-projet Développement Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Auteur :** Mattéo LOUET - INGÉ 1 BDML 2
 
-Currently, two official plugins are available:
+##  Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Application web interactive permettant de calculer les apports en protéines 
 
-## React Compiler
+##  Fonctionnalités
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Calcul des Protéines
+- **Saisie personnalisée** : Définissez une plage de poids (min/max)
+- **Nombre de lignes ajustable** : Choisissez combien de paliers de poids afficher
+- **4 objectifs sportifs disponibles** :
 
-## Expanding the ESLint configuration
+### Affichage et Export
+- **Tableau dynamique** : Génération automatique selon vos paramètres
+- **Filtrage par objectif** : Affichez tous les objectifs ou un seul spécifique
+- **Export CSV** : Téléchargez votre tableau au format CSV pour l'utiliser dans Excel ou autres
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Sécurité des Données
+- **Validation en temps réel** : Le poids max doit être supérieur au poids min
+- **Messages d'erreur clairs** : Alertes pour guider l'utilisateur
+- **Affichage conditionnel** : Le tableau n'apparaît que si tous les champs sont valides
+
+## Installation et Lancement
+
+### Prérequis
+- **Node.js** (version 14 ou supérieure) 
+- **npm** (installé automatiquement avec Node.js)
+
+### Étapes d'installation
+
+1. **télécharger le projet**
+```bash
+   cd mon-projet-proteines
+```
+
+2. **Installer les dépendances**
+```bash
+   npm install
+```
+
+3. **Structure des fichiers**
+   Assurez-vous d'avoir la structure du Github:
+
+
+4. **Lancer l'application**
+```bash
+   npm run dev
+```
+
+5. **Ouvrir dans le navigateur**
+   - Si ce n'est pas le cas, ouvrez manuellement l'URL générée 
+
+##  Utilisation
+
+1. **Saisissez votre plage de poids** (par exemple : min 56 kg, max 79 kg)
+2. **Choisissez le nombre de lignes** (par exemple : 10 lignes)
+3. **Sélectionnez votre objectif** (ou laissez "Tous les objectifs")
+4. **Consultez le tableau généré** avec les apports en protéines recommandés
+5. **Exportez en CSV** si vous souhaitez sauvegarder les données
+
+
+
+
+---
+
+💪 **Développé avec passion pour les gainz !** 💪
